@@ -5,12 +5,12 @@ function fibonacci(num) {
 	// let c = a + b;
 	let c;
 
-	for(let i = 2; i < n; i++ ){
+	for(let i = 2; i <= 50; i++ ){
 		c = a + b;
 		a = b;
 		b = c;
 	}
-	return c;
+	console.log(c);
 }
 
 module.exports = fibonacci;
