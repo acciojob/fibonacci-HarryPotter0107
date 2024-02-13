@@ -19,17 +19,17 @@
 
 function fibonacci(num) {
 // your code here
-	let a=0;
-	let b=1;
-	let sum=0;
-	for(let i=0;i<num-2;i++)
-		{
-			c=a+b;
-			sum=sum+c;
-			a=b;
-			b=c;
-			
-		}
+	let a = 0;
+	let b = 1;
+	if(num<=1) return num;
+
+	for(let i=2;i<=num;i++){
+		const c = a+b;
+		a=b;
+		b=c;
+	}
+	return b;
 }
+
 
 module.exports = fibonacci;
