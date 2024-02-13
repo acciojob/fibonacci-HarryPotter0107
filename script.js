@@ -4,10 +4,10 @@ function fibonacci(num) {
 	if(num == 2) return 1;
 	let prev = 0
 	let curr = 1;
-	let next;
+	
 
-	for(let i = 2; i <= num; i++ ){
-		next = prev + curr;
+	for(let i = 3; i <= num; i++ ){
+		let next = prev + curr;
 		prev = curr;
 		curr = next;
 	}
