@@ -1,16 +1,20 @@
 function fibonacci(num) {
 // your code here
-	let a = 0
-	let b = 1;
+	if(num == 0) return 0;
+	if(num == 1) return 1;
+	let prev = 0
+	let curr = 1;
 	// let c = a + b;
-	let c;
+	let next;
 
-	for(let i = 2; i <= 50; i++ ){
-		c = a + b;
-		a = b;
-		b = c;
+	for(let i = 2; i <= num; i++ ){
+		next = prev + curr;
+		prev = curr;
+		curr = next;
 	}
-	console.log(c);
+
+	return prev;
+	// console.log(c);
 }
 
 module.exports = fibonacci;
